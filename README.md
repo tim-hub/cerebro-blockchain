@@ -1,7 +1,7 @@
 # Cerebro Blockchain
-
+[repo](https://github.com/tim-hub/cerebro-blockchain)
 This is a toolkit to show blockchain states and infromation.
-- difficulity (0.1.1)
+- difficulity (since 0.1.1)
 
 ![blockchain](https://i.imgur.com/enoJKzN.png)
 
