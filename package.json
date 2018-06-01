@@ -4,15 +4,12 @@
   "description": "Cerebro plugin to show the current bitcoin blockchain's difficulty",
   "license": "MIT",
   "dependencies": {
-    "bootstrap": "^4.1.1",
     "cerebro-tools": "^0.1.8",
     "cerebro-ui": "^0.0.16",
-    "ramda": "^0.25.0",
     "request": "^2.87.0"
   },
   "devDependencies": {
-    "cerebro-scripts": "0.0.25",
-    "react": "^16.4.0"
+    "cerebro-scripts": "0.0.25"
   },
   "main": "dist/index.js",
   "keywords": [
