@@ -1,15 +1,32 @@
-import { getDifficulty } from './api'
+
+const BASE_URL = 'https://blockchain.info/q'
+
+
+
 
 export const fn = ({ term, display }) => {
   // Put your plugin code here
-
-  let match = term.match(/^blockchain?\s(.+)$/)
-  match = match || term.match(/^(.+)\sblockchain?$/)
+  // /^bloc?\s(.+)$/  /^(.+)\sbloc?$/
+  let reg = /^bloc/
+  let reg2 = /^bloc/
+  let match = term.match(reg)
+  match = match || term.match(reg2)
   if (match) {
-    let difficulty = getDifficulty();
+    const request = require('request');
 
-    display({
-      title: `Current Difficulty ${difficulty}`
-    })
+    let url = `${BASE_URL}/getdifficulty`
+
+    request(url, { json: true }, (err, res, body) => {
+      if (err) { return console.log(err); }
+
+      display({
+        title: `Current Difficulty: ${res.body}`
+      })
+
+      console.log(res);
+
+    });
+
+
   }
 }
