@@ -1,6 +1,6 @@
 {
   "name": "cerebro-blockchain",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Cerebro plugin to show the current bitcoin blockchain's difficulty",
   "license": "MIT",
   "dependencies": {
